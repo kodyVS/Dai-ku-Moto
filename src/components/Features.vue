@@ -1,9 +1,9 @@
 <template>
   <div class="features-section">
-    <h2 class="title">
+    <h1 class="title">
       Need repairs or looking for a used moto?
       <a @click.prevent="scrollTo()"><span>let us know</span>.</a>
-    </h2>
+    </h1>
     <div v-if="$language === 'english'" class="features">
       <div
         v-for="(feature, index) in english.features"
