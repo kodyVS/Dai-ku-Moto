@@ -154,18 +154,8 @@ export default {
 }
 @media only screen and (max-width: 1020px) {
   .header {
-    display: flex;
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-      ),
-      url(../assets/img/cover-photo.jpg);
     background-size: cover;
     background-position: 60% 35%;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
 
     &__logo {
       height: 10rem;
@@ -188,12 +178,9 @@ export default {
     }
 
     .button-group {
-      display: flex;
-      flex-direction: column;
       transform: translate(0rem, 20rem);
       opacity: 1;
       animation: none;
-      animation-fill-mode: forwards;
     }
   }
 }

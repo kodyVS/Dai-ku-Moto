@@ -1,22 +1,26 @@
 <template>
-  <section class="gallery">
-    <figure class="gallery__item gallery__item--2">
+  <section v-lazy-container="{ selector: 'img' }" class="gallery">
+    <figure
+      v-for="(img, index) in images"
+      :key="index"
+      :class="'gallery__item gallery__item--' + index"
+    >
       <img
-        src="../assets/img/gallery/clean-work-2.jpg"
-        alt="Gallery image 2"
+        :data-src="require(`@/assets/img/gallery/${img}.jpg`)"
+        :alt="'Gallery image ' + index"
         class="gallery__img"
       />
     </figure>
-    <figure class="gallery__item gallery__item--1">
+    <!-- <figure class="gallery__item gallery__item--1">
       <img
-        src="../assets/img/gallery/clean-work-1.jpg"
+        :data-src="require(`@/assets/img/gallery/${source}.jpg`)"
         alt="Gallery image 1"
         class="gallery__img"
       />
     </figure>
     <figure class="gallery__item gallery__item--3">
       <img
-        src="../assets/img/gallery/custom-paint.jpg"
+        data-src="/img/gallery/custom-paint.jpg"
         alt="Gallery image 3"
         class="gallery__img"
       />
@@ -97,12 +101,34 @@
         alt="Gallery image 14"
         class="gallery__img"
       />
-    </figure>
+    </figure> -->
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      source: "clean-work-2",
+      images: [
+        "clean-work-1",
+        "clean-work-2",
+        "cover-photo",
+        "custom-paint",
+        "gallery-1",
+        "gallery-2",
+        "gallery-3",
+        "gallery-4",
+        "gallery-5",
+        "gallery-6",
+        "gallery-7",
+        "repair-2",
+        "repair-3",
+        "repair-4",
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -117,72 +143,72 @@ export default {};
   padding: 1.5rem;
 
   &__item {
-    &--1 {
+    &--0 {
       grid-row: 1 / span 2;
       grid-column: 1 / span 2;
     }
 
-    &--2 {
+    &--1 {
       grid-row: 1 / span 3;
       grid-column: 3 / span 3;
     }
 
-    &--3 {
+    &--2 {
       grid-row: 1 / span 2;
       grid-column: 6 / 7;
     }
 
-    &--4 {
+    &--3 {
       grid-row: 1 / span 2;
       grid-column: 7 / -1;
     }
 
-    &--5 {
+    &--4 {
       grid-row: 3 / span 3;
       grid-column: 1 / span 2;
     }
 
-    &--6 {
+    &--5 {
       grid-row: 4 / span 2;
       grid-column: 3 / span 2;
     }
 
-    &--7 {
+    &--6 {
       grid-row: 4 / 5;
       grid-column: 5 / 6;
     }
 
-    &--8 {
+    &--7 {
       grid-row: 3 / span 2;
       grid-column: 6 / span 2;
     }
 
-    &--9 {
+    &--8 {
       grid-row: 3 / span 3;
       grid-column: 8 / -1;
     }
 
-    &--10 {
+    &--9 {
       grid-row: 6 / span 2;
       grid-column: 1 / 2;
     }
 
-    &--11 {
+    &--10 {
       grid-row: 6 / span 2;
       grid-column: 2 / span 2;
     }
 
-    &--12 {
+    &--11 {
       grid-row: 6 / span 2;
       grid-column: 4 / 5;
     }
 
-    &--13 {
+    &--12 {
       grid-row: 5 / span 3;
       grid-column: 5 / span 3;
     }
 
-    &--14 {
+    &--13 {
       grid-row: 6 / span 2;
       grid-column: 8 / -1;
     }
