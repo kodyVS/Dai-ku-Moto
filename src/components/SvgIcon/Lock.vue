@@ -1,0 +1,43 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="ionicon"
+    :style="iconStyle"
+    viewBox="0 0 512 512"
+  >
+    <title>Lock Closed</title>
+    <path
+      d="M336 208v-95a80 80 0 00-160 0v95"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="32"
+    />
+    <rect
+      x="96"
+      y="208"
+      width="320"
+      height="272"
+      rx="48"
+      ry="48"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="32"
+    />
+  </svg>
+</template>
+<script>
+export default {
+  props: ["iconStyle"],
+};
+</script>
+<style lang="scss">
+.ionicon {
+  & > * {
+    stroke-width: 4%;
+  }
+}
+</style>

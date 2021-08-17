@@ -1,0 +1,11 @@
+$--simple-drawer-bg-color: #1b1b1b;
+$--simple-drawer-softorange: #d35a02;
+$--simple-drawer-close-width: 30px;
+@import "~vue-simple-drawer/src/index";
+.vue-simple-drawer {
+  width: 80vw;
+  height: 100vh;
+}
+.mask {
+  background-color: black;
+}
