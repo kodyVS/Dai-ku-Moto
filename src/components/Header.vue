@@ -33,7 +33,7 @@ export default {
       text: "",
       buttonText: {
         button1: "បន្តជាភាសាអង់គ្លេស",
-        button2: "Continue in English lolol",
+        button2: "Continue in English test",
       },
     };
   },
