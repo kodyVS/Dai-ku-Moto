@@ -5,11 +5,7 @@ module.exports = {
         filename: "[file].br[query]",
         algorithm: "brotliCompress",
         include: /\.(js|css|html|svg|json)(\?.*)?$/i,
-        compressionOptions: {
-          params: {
-            [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
-          },
-        },
+        compressionOptions: {},
         minRatio: 0.8,
       },
       gzip: {
