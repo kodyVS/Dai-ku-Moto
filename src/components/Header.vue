@@ -4,16 +4,19 @@
       src="../assets/img/header-top.png"
       alt="Logo-top"
       class="header__logo header__logo--1"
+      rel="preload"
     />
     <img
       src="../assets/img/header-middle.png"
       alt="Logo-middle"
       class="header__logo header__logo--2"
+      rel="preload"
     />
     <img
       src="../assets/img/header-bottom.png"
       alt="Logo-bottom"
       class="header__logo header__logo--3"
+      rel="preload"
     />
     <div class="button-group">
       <button @click.prevent="setLanguage('khmer')" class="btn btn-full">
