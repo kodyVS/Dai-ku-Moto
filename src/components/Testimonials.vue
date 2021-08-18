@@ -17,7 +17,7 @@
           <img
             class="testimonial__img"
             :src="require(`@/assets/img/${testimonial.image}.jpg`)"
-            alt="Customer1"
+            :alt="'customer' + index"
           />
           {{ testimonial.person }}</cite
         >
