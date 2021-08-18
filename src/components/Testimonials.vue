@@ -121,10 +121,6 @@ export default {
 </script>
 
 <style lang="scss">
-h1,
-h2 {
-  font-weight: 300;
-}
 blockquote {
   padding: 2%;
   font-style: italic;

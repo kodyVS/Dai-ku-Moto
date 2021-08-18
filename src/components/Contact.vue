@@ -2,7 +2,11 @@
   <div class="section-form" id="contact">
     <h2 class="contact-form_title">{{ text.title }}</h2>
 
-    <form @submit="onSubmit" class="contact-form">
+    <form
+      action="https://formsubmit.co/kodyvansloten1@gmail.com"
+      method="POST"
+      class="contact-form"
+    >
       <!-- Name -->
       <input
         class="input input--1"
@@ -31,7 +35,7 @@
         rows="9"
         :placeholder="text.message"
       ></textarea>
-      <input type="submit" value="Send it!" />
+      <input type="submit" value="Send it!" class="btn-submit" />
     </form>
   </div>
 </template>
@@ -85,7 +89,7 @@ export default {
 
 <style>
 .contact-form_title {
-  margin: 3rem 0 4rem 0;
+  margin: 9rem 0 6rem 0;
   font-size: 4rem;
   letter-spacing: 3px;
   color: #464646;
@@ -100,12 +104,15 @@ export default {
 }
 .contact-form {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 input[type="text"],
 input[type="email"],
 textarea {
+  box-sizing: border-box;
   width: 100%;
-  padding: 8px;
+  padding: 1.2rem;
   margin-bottom: 3rem;
   border-radius: 8px;
   border: 1px solid rgb(189, 189, 189);
@@ -114,7 +121,9 @@ textarea {
   background-color: rgb(254, 254, 254);
   resize: none;
 }
-
+.btn-submit {
+  align-self: flex-end;
+}
 textarea {
   height: 100px;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="features-section">
     <div class="title">
-      <h1>Need repairs or looking for a used moto?</h1>
+      <h1 class="title">Need repairs or looking for a used moto?</h1>
       <a @click.prevent="scrollTo()"><span>let us know</span>.</a>
     </div>
     <div v-if="$language === 'english'" class="features">
@@ -202,7 +202,7 @@ export default {
   width: 5rem;
 }
 .title {
-  margin: 5rem 0 3rem 0;
+  margin: 8rem 0 2rem 0;
   font-size: 3.4rem;
   text-align: center;
   letter-spacing: 3px;
@@ -257,7 +257,7 @@ export default {
 @media only screen and (max-width: 1020px) {
   .title {
     letter-spacing: 2.2px;
-    font-size: 2.3rem;
+    font-size: 3rem;
     a {
       display: block;
       margin-top: 0.7rem;

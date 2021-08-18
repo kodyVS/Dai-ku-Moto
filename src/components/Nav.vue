@@ -331,7 +331,7 @@ export default {
 
 //DESKTOP - navigation bar
 .nav {
-  height: 5rem;
+  height: 5.5rem;
   width: 100%;
   background-color: rgb(22, 22, 22);
   box-shadow: 0 2px 2px rgb(22, 22, 22);
@@ -353,6 +353,7 @@ export default {
   }
   &__logo {
     height: 5rem;
+    width: 5rem;
     margin-left: 1rem;
   }
   &__list-item {
@@ -405,8 +406,8 @@ export default {
   }
 }
 .icon {
-  height: 3rem;
-  width: 3rem;
+  height: 3.5rem;
+  width: 3.5rem;
   fill: rgb(223, 223, 223);
   margin-left: 1rem;
   transition: all 0.2s ease-in;

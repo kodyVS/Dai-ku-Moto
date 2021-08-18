@@ -42,4 +42,10 @@ html {
   color: var(--color-text);
   background-color: #e6e6e6;
 }
+
+@media only screen and (max-width: 1020px) {
+  html {
+    font-size: 55%;
+  }
+}
 </style>

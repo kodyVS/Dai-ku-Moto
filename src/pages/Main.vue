@@ -89,7 +89,9 @@ export default {
 
         case "link-contact-us":
           location =
-            this.$refs["contact-us"].$el.getBoundingClientRect().top - bodyRect;
+            this.$refs["contact-us"].$el.getBoundingClientRect().top -
+            bodyRect -
+            30;
           break;
       }
       console.log(location);
@@ -100,6 +102,13 @@ export default {
 </script>
 
 <style lang="scss">
+h1,
+h2 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 3.8rem;
+}
 .content {
   font-size: 1.6rem;
   display: grid;
