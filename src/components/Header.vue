@@ -1,22 +1,22 @@
 <template>
   <div class="header">
-    <img
-      src="../assets/img/header-top.png"
+    <v-lazy-image
+      :src="require(`@/assets/img/header-top.png`)"
+      :src-placeholder="require(`@/assets/img/small/header-top.png`)"
       alt="Logo-top"
       class="header__logo header__logo--1"
-      rel="preload"
     />
-    <img
-      src="../assets/img/header-middle.png"
+    <v-lazy-image
+      :src="require(`@/assets/img/header-middle.png`)"
+      :src-placeholder="require(`@/assets/img/small/header-middle.png`)"
       alt="Logo-middle"
       class="header__logo header__logo--2"
-      rel="preload"
     />
-    <img
-      src="../assets/img/header-bottom.png"
+    <v-lazy-image
+      :src="require(`@/assets/img/header-bottom.png`)"
+      :src-placeholder="require(`@/assets/img/small/header-bottom.png`)"
       alt="Logo-bottom"
       class="header__logo header__logo--3"
-      rel="preload"
     />
     <div class="button-group">
       <button @click.prevent="setLanguage('khmer')" class="btn btn-full">
@@ -30,7 +30,11 @@
 </template>
 <script>
 import Vue from "vue";
+import VLazyImage from "v-lazy-image";
 export default {
+  components: {
+    VLazyImage,
+  },
   data() {
     return {
       text: "",
@@ -124,8 +128,8 @@ export default {
   }
   @keyframes fly-in-bottom {
     0% {
-      transform: translateY(100rem);
       opacity: 0;
+      transform: translateY(100rem);
     }
     65% {
       transform: translateY(11rem);
