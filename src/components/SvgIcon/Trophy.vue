@@ -1,4 +1,8 @@
 <template>
+  <!-- Made SVG Icons to import as a component so I could use the <component></component> to render them into the vue file
+    I thought about using a package for this but this allows me to choose what ever SVG I want from whatever package 
+    Allows me to input the svg icon through javascript instead of xlink:href
+    Also allows me to bind a prop's to whatever class I want to change on the svg or the path, total customization of icons -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     :style="iconStyle"

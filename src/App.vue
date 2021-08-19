@@ -18,22 +18,9 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
 
-//VARIABLES
-:root {
-  --color-text: #242424;
-  --color-primary: #d35a02;
-}
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+//Chose Open sans as the main font and sans-serif as the background
+//Font smoothing is standard I think?
+// Set the default text color in the app with the almost black color
 #app {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -43,6 +30,7 @@ html {
   background-color: #e6e6e6;
 }
 
+// I reduce the font-size for smaller screens so that also reduces the size of everything in rem
 @media only screen and (max-width: 1020px) {
   html {
     font-size: 55%;

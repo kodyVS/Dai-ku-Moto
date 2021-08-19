@@ -1,4 +1,6 @@
 <template>
+  <!-- Simple form that send with formsubmit, currently exposes the email to web crawlers
+  //! find a way to fix this. Maybe with env varibales? -->
   <div class="section-form" id="contact">
     <h2 class="contact-form_title">{{ text.title }}</h2>
 

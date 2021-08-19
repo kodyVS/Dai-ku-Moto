@@ -1,33 +1,22 @@
 <template>
+  <!-- // todo Add a popup for the image when it is clicked,
+     // todo Possibly reduce the number of images shown on mobile -->
   <section class="gallery">
+    <!-- Looping through images and giving them a class with the index of the image -->
     <figure
       v-for="(img, index) in images"
       :key="index"
       :class="'gallery__item gallery__item--' + index"
     >
+      <!-- When using src on images you need to require the image instead of just passing in a string when it goes through javascript -->
+      <!-- Used v-laxy-image to give a placeholder and a blur effect. Very useful -->
       <v-lazy-image
         :src="require(`@/assets/img/gallery/${img}.jpg`)"
         :src-placeholder="require(`@/assets/img/gallery/small/${img}.jpg`)"
         :alt="'Gallery image ' + index"
         class="gallery__img"
       />
-      <!-- Solution for lazy loading the images but no place holders -->
-      <!-- <img
-        :data-src="require(`@/assets/img/gallery/${img}.jpg`)"
-        :alt="'Gallery image ' + index"
-        class="gallery__img"
-      /> -->
     </figure>
-
-    <!-- Solution for no lazy loading -->
-
-    <!-- <figure class="gallery__item gallery__item--1">
-      <img
-        :data-src="require(`@/assets/img/gallery/${source}.jpg`)"
-        alt="Gallery image 1"
-        class="gallery__img"
-      />
-      -->
   </section>
 </template>
 
@@ -65,14 +54,14 @@ export default {
 .gallery {
   margin-top: 10rem;
   display: grid;
-  /*grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 5vw);*/
+  //Created a grid tempate that fits the current amount of images I have
   grid-template: repeat(7, 5vw) / repeat(8, 1fr);
 
   grid-gap: 1.5rem;
   padding: 1.5rem;
 
   &__item {
+    //Manually creating a grid for the images
     &--0 {
       grid-row: 1 / span 2;
       grid-column: 1 / span 2;
@@ -150,6 +139,7 @@ export default {
     object-fit: cover;
     display: block;
   }
+  //blur effect on loading images
   .v-lazy-image {
     filter: blur(5px);
     transition: filter 0.7s;

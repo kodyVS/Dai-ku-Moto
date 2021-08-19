@@ -1,8 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
-import "./style/vue-simple-drawer.scss";
-import VueGtag from "vue-gtag";
 
+// STYLESHEET IMPORTS
+import "./style/vue-simple-drawer.scss";
+import "./style/global-style-sheet.scss";
+
+//GLOBAL COMPONENT IMPORTS
+import VueGtag from "vue-gtag";
+// Setting up VueGtag with a MEASUREMENT ID
 Vue.use(VueGtag, {
   config: {
     id: "G-F4NV4Q7D7Y",

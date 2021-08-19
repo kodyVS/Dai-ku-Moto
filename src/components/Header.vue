@@ -1,5 +1,6 @@
 <template>
   <div class="header">
+    <!-- The 3 parts to the logo that loads in -->
     <v-lazy-image
       :src="require(`@/assets/img/header-top.png`)"
       :src-placeholder="require(`@/assets/img/small/header-top.png`)"
@@ -18,6 +19,7 @@
       alt="Logo-bottom"
       class="header__logo header__logo--3"
     />
+    <!-- Buttons that set the language of the site -->
     <div class="button-group">
       <button @click.prevent="setLanguage('khmer')" class="btn btn-full">
         {{ buttonText.button1 }}
@@ -29,8 +31,8 @@
   </div>
 </template>
 <script>
-import Vue from "vue";
 import VLazyImage from "v-lazy-image";
+import Vue from "vue";
 export default {
   components: {
     VLazyImage,
@@ -46,8 +48,11 @@ export default {
     };
   },
   methods: {
+    // Here I call the set property to change the language to khmer and then set the language locally
     setLanguage(language) {
-      Vue.set(Vue.prototype, "$language", "khmer");
+      //Not sure If I have to use the Vue.set
+      //Vue.set(Vue.prototype, "$language", language);
+      //Currently just accessing the variable directly works, but I would like to know if there is better practices
       this.$language = language;
       this.$emit("scrollTo", "link-about-us");
     },
@@ -56,6 +61,7 @@ export default {
 </script>
 <style lang="scss">
 .header {
+  position: relative;
   display: flex;
   background-image: linear-gradient(
       to right,
@@ -66,7 +72,7 @@ export default {
   background-size: 100%;
   background-position: 100% 35%;
 
-  background-attachment: fixed;
+  background-attachment: fixed; //Cool csss feature that does static positioned backgrounds
   align-items: center;
   justify-content: center;
 
@@ -94,7 +100,7 @@ export default {
     flex-direction: column;
     transform: translateX(20rem);
     opacity: 0;
-    animation: fade-in 2s 1.8s;
+    animation: fade-in 2s 1.8s; //fades in after the animation of the logo takes place and takes 2 seconds
     animation-fill-mode: forwards;
     .btn {
       margin: 1rem;
@@ -113,11 +119,10 @@ export default {
   @keyframes fly-in-top {
     0% {
       transform: translateY(-100rem);
-      opacity: 0;
+      opacity: 0; //! I cannot figure out why these opacities aren't working
     }
     50% {
       transform: translateY(-12rem);
-      opacity: 1;
     }
     75% {
       transform: translateY(-12rem);

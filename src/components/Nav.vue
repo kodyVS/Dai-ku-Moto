@@ -2,8 +2,9 @@
   <!-- Section for nav -->
   <div class="nav-section">
     <!-- ************************ -->
-    <!-- *****MOBILE NAVIGATION***** -->
+    <!--    MOBILE NAVIGATION -->
     <!-- ************************** -->
+
     <nav class="mobile-nav">
       <!-- Toggle button for menu ONLY SHOWN WHEN MOBILE NAV IS ACTIVE -->
       <div class="nav-top">
@@ -44,6 +45,7 @@
           </li>
         </ul>
       </div>
+      <!-- Used a plug in for the draw effect. Sadly I didn't code it myself, but I wanted to use some components to solidify knowledge of component usage -->
       <Drawer @close="toggleMenu()" align="left" :closeable="true">
         <div v-if="navToggle" class="drawer">
           <ul class="mobile-nav__links">
@@ -105,9 +107,9 @@
     </nav>
 
     <!-- ************************  -->
-    <!-- *****DESKTOP NAVIGATION***** -->
+    <!--    DESKTOP NAVIGATION -->
     <!-- ************************** -->
-
+    <!-- I could have used the same top nav for both and used v-if but I found it easier to just build 2 headers instead of changing the flex rules -->
     <nav class="nav">
       <!-- Image shown -->
       <img src="../assets/img/Favicon-no-text-3.png" alt="" class="nav__logo" />
@@ -137,6 +139,7 @@
       </div>
 
       <!-- Social Icons svg -->
+      <!-- In the future I will stop using xlink:href and just build components for the svg's since its so easy -->
       <ul class="nav__social">
         <li class="nav__social__icon">
           <a
@@ -239,6 +242,7 @@ export default {
     this.setLanguage("english");
   },
   watch: {
+    //? Using the $language varibale directly, shouldn't I use a getter?
     $language() {
       this.setLanguage(this.$language);
     },
@@ -316,7 +320,9 @@ export default {
     display: block;
     cursor: pointer;
     &:hover {
-      filter: brightness(0.5);
+      filter: brightness(
+        0.5
+      ); //I really like the filter: brightness effect on the icons
     }
   }
   &__phone-number {

@@ -2,31 +2,20 @@
   <div class="features-section">
     <div class="title">
       <h1 class="title">Need repairs or looking for a used moto?</h1>
+      <!-- Simple event emitted in scrollTo() that scrolls the the contact page -->
       <a @click.prevent="scrollTo()"><span>let us know</span>.</a>
     </div>
+    <!-- Using 2 different divs when the language switches. I could probably reduce code by adding ternary operators in each field
+    but I am not sure which is more optimal -->
     <div v-if="$language === 'english'" class="features">
       <div
         v-for="(feature, index) in english.features"
         :key="index"
         class="feature"
       >
-        <!-- <component
-          :is="feature.icon"
-          h="50"
-          w="50"
-          rootClass="icon-features"
-        ></component> -->
-
+        <!-- Here is my solution for switching out the SVG icons in the for-loop. I place a new component in with the name shown in feature.icon -->
+        <!-- I was able to pass the iconstyle into the svg directly :) -->
         <component :is="feature.icon" :iconStyle="'height:5rem'"></component>
-
-        <!-- <svg class="icon icon__facebook">
-          <use :xlink:href="feature.icon"></use>
-        </svg> -->
-        <!-- <img
-          src="../assets/img/feature-icons/globe-outline.svg"
-          alt="Trophy"
-          class="feature-image"
-        /> -->
         <h4 class="heading-4">{{ feature.title }}</h4>
         <p class="feature__text">
           {{ feature.text }}
@@ -40,23 +29,7 @@
         :key="index"
         class="feature"
       >
-        <!-- <component
-          :is="feature.icon"
-          h="50"
-          w="50"
-          rootClass="icon-features"
-        ></component> -->
-
         <component :is="feature.icon" :iconStyle="'height:5rem'"></component>
-
-        <!-- <svg class="icon icon__facebook">
-          <use :xlink:href="feature.icon"></use>
-        </svg> -->
-        <!-- <img
-          src="../assets/img/feature-icons/globe-outline.svg"
-          alt="Trophy"
-          class="feature-image"
-        /> -->
         <h4 class="heading-4">{{ feature.title }}</h4>
         <p class="feature__text">
           {{ feature.text }}
@@ -169,6 +142,7 @@ export default {
       },
     };
   },
+  //Creating a local variable for the language (suppose to be better to use local variables for watched values but I could be wrong)
   created() {
     this.setLanguage("english");
   },
@@ -193,6 +167,7 @@ export default {
 </script>
 
 <style lang="scss">
+//! I need Go back and clean up this scss, it's structure is messy
 .icon-features {
   height: 5rem;
   width: 5rem;

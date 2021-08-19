@@ -1,4 +1,5 @@
 <template>
+  <!-- Very basic footer -->
   <div class="footer-section">
     <img src="../assets/img/Favicon-no-text-3.png" class="footer__logo" />
     <div class="footer__text">
