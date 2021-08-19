@@ -35,6 +35,7 @@ export default {
   components: {
     VLazyImage,
   },
+  created() {},
   data() {
     return {
       text: "",
