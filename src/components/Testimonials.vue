@@ -22,36 +22,6 @@
           {{ testimonial.person }}</cite
         >
       </div>
-      <!-- <div class="testimonial testimonial--1">
-        <blockquote class="testimonial__text">
-          Best moto shop in Cambodia. The service was outstanding and the
-          quality of work was amazing. The owner is a really nice person
-        </blockquote>
-        <cite class="testimonial__person">
-          <img
-            class="testimonial__img"
-            src="../assets/img/customer-1.jpg"
-            alt="Customer1"
-          />
-          Kody Van Sloten</cite
-        >
-      </div>
-      <div class="testimonial testimonial--2">
-        <blockquote class="testimonial__text">
-          Inexpensive, healthy and great-tasting meals, delivered right to my
-          home. We have lots of food delivery here in Lisbon, but no one comes
-          even close to Omifood. Me and my family are so in love!
-        </blockquote>
-        <cite class="testimonial__person"
-          ><img
-            class="testimonial__img"
-            src="../assets/img/customer-2.jpg"
-            alt="Customer2"
-          />Joana Silva</cite
-        >
-      </div>
-
- -->
     </div>
   </div>
 </template>
