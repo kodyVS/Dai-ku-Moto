@@ -5,7 +5,7 @@
 ## About The Project
 <hr>
 
-![[Pasted image 20210818222637.png]]
+![image](https://ibb.co/G7zSjrb)
 
 I built this project for a company called dai ku moto in cambodia who fixes and sells used motos. I used this time to practice and implement some best practices when it comes to working in front end development in a small easy to understand project. I tried to keep to using basic Vue functionailty instead of expanding into all the amazing (heavier) features Vue has.
 
