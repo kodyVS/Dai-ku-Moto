@@ -42,13 +42,13 @@ export default {
           image: "customer-2",
           person: "Joana Silva",
           text:
-            " Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!",
+            "I dropped off my moto and I don't even recognize the moto they gave back. They did such a good job on the custom paint work and I am so happy with the way it turned out.",
         },
         {
           image: "customer-3",
           person: "Milton Chapman",
           text:
-            " I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!",
+            " Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. The owner is a really nice person",
         },
       ],
       khmer: [
