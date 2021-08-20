@@ -1,6 +1,8 @@
 <!-- prettier-ignore-start -->
 <h1 style="display:block;text-align:center">Dai Ku Moto</h1>
 
+https://clever-tereshkova-772ddd.netlify.app/
+
 
 ## About The Project
 <hr>
