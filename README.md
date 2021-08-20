@@ -27,7 +27,6 @@ The main areas I was able to solidify my knowledge
 	- Passing data between components effectivly
 	- Event management
 	- Different bundling options
-	- Manually setting up variables to be watched
 	- Created a svg libary to use (simple)
 	- Lazy loading content
 	- Working towards best practices in vue
