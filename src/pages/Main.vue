@@ -15,7 +15,7 @@
       <Testimonials ref="testimonials" />
       <Gallery ref="gallery" />
       <Contact ref="contact-us" />
-      <Footer />
+      <Footer @scrollTo="scrollToId($event)" />
     </div>
   </div>
 </template>

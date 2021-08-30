@@ -28,7 +28,9 @@
             ></a>
           </li>
           <li class="nav__social__icon">
-            <a href="#">
+            <a
+              href="https://wa.me/85561960015?text=I'm%20in%20need%20of%20moto%20repair"
+            >
               <svg class="icon icon__whatsapp">
                 <use
                   xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"
@@ -36,7 +38,7 @@
             ></a>
           </li>
           <li class="nav__social__icon">
-            <a href="#">
+            <a href="https://telegram.me/tarmanau">
               <svg class="icon icon__telegram">
                 <use
                   xlink:href="../assets/img/icons/telegram.svg#telegram"
@@ -65,7 +67,7 @@
           </ul>
           <p class="mobile-nav__hours">
             Open Monday-Thurday <br />
-            9:00am to 5:00pm
+            8:00am to 5:00pm
           </p>
           <a href="tel:+62896706255135" class="mobile-nav__phone-number">
             {{ text.number }}</a
@@ -132,7 +134,7 @@
 
       <!-- Currently only displaying the phone number with a link to phone app -->
       <div class="nav__information">
-        <a href="tel:+62896706255135" class="nav__phone-number">{{
+        <a href="tel:+85561960015" class="nav__phone-number">{{
           text.number
         }}</a>
         <!-- <p class="nav__hours">8:00 to 5:00pm Monday-Thursday</p> -->
@@ -205,7 +207,7 @@ export default {
             id: "contact-us",
           },
         ],
-        number: "+447123456789",
+        number: "+85561960015",
       },
       khmer: {
         links: [
@@ -230,7 +232,7 @@ export default {
             id: "contact-us",
           },
         ],
-        number: "+999999999",
+        number: "+85561960015",
       },
       menuDisplay: true,
     };
@@ -381,8 +383,7 @@ export default {
     text-decoration: none;
     color: rgb(223, 223, 223);
   }
-  &__link:hover,
-  &__link:active {
+  &__link:hover {
     transform: translateX(10px);
     filter: brightness(0.5);
     transition: all 0.2s;
@@ -439,6 +440,12 @@ export default {
   }
   .nav {
     visibility: hidden;
+  }
+  .icon {
+    &:hover {
+      filter: brightness(1);
+      transform: scale(1);
+    }
   }
 }
 </style>
