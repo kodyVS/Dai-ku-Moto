@@ -1,13 +1,21 @@
 <template>
   <div class="features-section">
     <div class="title">
-      <h1 class="title">
-        Moto Repairs and Maintenance at a Fair Price
+      <h1 v-if="$language === 'english'" class="title">
+        {{ english.title }}
+      </h1>
+      <h1 v-else class="title">
+        {{ khmer.title }}
       </h1>
       <!-- Simple event emitted in scrollTo() that scrolls the the contact page -->
-      <a @click.prevent="scrollTo()"
-        ><span class="span--1">Contact us</span> to Schedule an Appointment.</a
+      <a v-if="$language === 'english'" @click.prevent="scrollTo()"
+        ><span class="span--1">Call</span> to Schedule an Appointment.</a
       >
+      <a v-else @click.prevent="scrollTo()"
+        ><span class="span--1"
+          >សូមទំនាក់ទំនងមកកាន់យើងខ្ញុំដើម្បីធ្វើការណាត់ជួប</span
+        >
+      </a>
     </div>
     <div class="features__hours">
       Monday to Thursday | 8:00am 5:00pm
@@ -66,84 +74,85 @@ export default {
     return {
       text: {},
       english: {
-        title: "",
+        title: "Quality Moto Repairs and Maintenance at a Fair Price",
         features: [
           {
             icon: "IosHammer",
             title: "Repairs and Maintenance",
             text:
-              "Dai Ku Moto services nearly all makes and models of motos found here in Cambodia. If your moto isn’t working well or hasn’t been serviced recently, please give us a call to schedule an appointment and we would be happy to help!",
+              "Dai Ku Moto services nearly all makes and models of motos found here in Cambodia. Our goal is to keep your motorcycle running great so you can ride with confidence. Please give us a call to schedule an appointment and we would be happy to help!",
           },
           {
             icon: "IosBarChart",
             title: "Competitive Rates",
             text:
-              "We take pride in offering our services at fair and transparent rates. At Dai Ku Moto, we are also flexible to work within your desired budget. We communicate with you throughout the repair process so that you are satisfied with the final product and the final price.",
+              "We take pride in offering our services at fair rates. At Dai Ku Moto, we are also flexible to work within your desired budget.",
           },
           {
             icon: "IosKey",
             title: "Sales and Purchases",
             text:
-              "While repairs and maintenance are our ‘bread-and-butter,’ we do often take opportunities to buy and sell motos as well. If you are looking to purchase a moto, please contact Dai Ku Moto to see what we have available.",
+              "We also buy and sell motos. If you are looking to purchase a moto, please contact Dai Ku Moto to see what we have available. ",
           },
           {
             icon: "IosHome",
             title: "Mobile and Pickup Service",
             text:
-              "Is your moto broken down at your home? Can’t get it to start? We can arrange a service call to your location for basic repairs and diagnosis of issues. We can also arrange a pickup service to haul your moto on our trailer to bring it to the Dai Ku Moto shop for repairs.",
+              "Is your moto broken down at your home or workplace? Can’t get it to start? We can arrange a service call to your location for basic repairs and diagnosis of issues. We can also arrange a pickup service to haul your moto on our trailer to bring it to the Dai Ku Moto shop for repairs.",
           },
           {
             icon: "IosLock",
             title: "Safety",
             text:
-              "There are many hazards on the roads, don’t let your moto be one of them! At Dai Ku Moto, we make the safety of your moto our top priority. Items such as lights, brakes, and tires are always checked to ensure safe operation, and if we find anything suspect, we will communicate that to you",
+              "There are many hazards on the roads, don’t let your moto be one of them! At Dai Ku Moto, we make the safety of your moto our top priority.",
           },
           {
             icon: "IosEarth",
             title: "Friendly Service in English and Khmer",
             text:
-              "It is our goal to help make your moto repair experience as pleasant as possible. We are a bilingual shop that speaks both Khmer and English, and we are happy to serve our Cambodian and expat customers with integrity.",
+              "It is our goal to help make your moto repair experience as pleasant as possible. We are a bilingual shop that speaks both Khmer and English, and we are happy to serve our Cambodian and expat customers with integrity. ",
           },
         ],
       },
       khmer: {
-        title: "asdf",
+        title: "ជួសជុល​ និងថែទាំម៉ូតូដែលមានគុណភាពក្នុងតម្លៃសមរម្យ",
         features: [
           {
             icon: "IosHammer",
-            title: "asdf",
+            title: "ការជួសជុល និងការថែទាំ",
             text:
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.",
-          },
-          {
-            icon: "IosRibbon",
-            title: "asdf",
-            text:
-              "We can help you get the look you want from your moto. We want to give you the bike you love.",
-          },
-          {
-            icon: "IosTrophy",
-            title: "asdf",
-            text:
-              "We strive to give all our customers the best experience they can. We know repairs can be frusterating, that's why we want to help.",
-          },
-          {
-            icon: "IosKey",
-            title: "asdf",
-            text:
-              "We always have moto's for sale. Contact us or head to our facebook page to see the latest moto's for sale.",
+              "សេវាកម្មដៃគូម៉ូតូជួសជុលស្ទើរតែគ្រប់ប្រភេទម៉ូតូទាំងអស់ដែលមាននៅក្នុងប្រទេសកម្ពុជា។ គោលដៅរបស់យើង​​ខ្ញំុគឺធ្វើឱ្យម៉ូតូរបស់អ្នកដំណើរការល្អ ដូច្នេះអ្នកអាចជិះវាដោយមានទំនុកចិត្ត។ សូមទូរស័ព្ទមកយើងដើម្បីកំណត់ពេលណាត់ជួប ហើយយើងរីករាយនឹងជួយដល់អ្នក!",
           },
           {
             icon: "IosBarChart",
-            title: "asdf",
+            title: "តម្លៃសមរម្យតាមទីផ្សារ",
             text:
-              "We strive to help you get your equipment fixed at a price you can afford",
+              "យើងមានមោទនភាពក្នុងការផ្តល់ជូនសេវាកម្មរបស់យើងក្នុងតម្លៃសមរម្យ។ នៅដៃគូម៉ូតូយើងក៏មានភាពបត់បែនក្នុងការធ្វើការទៅតាមថវិកាដែលអ្នកចង់ចំណាយ។",
+          },
+          {
+            icon: "IosKey",
+            title: "ការលក់ និងការទិញ",
+            text:
+              "យើងក៏ទិញ និងលក់ម៉ូតូផងដែរ។ ប្រសិនបើអ្នកកំពុងចង់រកទិញម៉ូតូ សូមទាក់ទងមកពួកយើងដើម្បីដឹងថាយើងមានម៉ូតូអ្វីខ្លះ។",
+          },
+          {
+            icon: "IosHome",
+            title: "សេវាកម្មតាមទូរស័ព្ទ និងការទៅទទួលយក",
+            text:
+              "តើម៉ូតូរបស់អ្នកខូចនៅផ្ទះ ឬនៅកន្លែងធ្វើការរបស់អ្នកមែនទេ? មិនអាចធ្វើឱ្យម៉ាសុីនដំណើរការបានមែនទេ? យើងអាចរៀបចំសេវាកម្មការហៅតាមទូរស័ព្ទ​ដើម្បីយើងអាចទៅកាន់ទីតាំងរបស់អ្នកសម្រាប់ការជួសជុលបឋម និងការពិនិត្យមើលលើបញ្ហាដែលមាន។ យើងក៏អាចរៀបចំសេវាកម្មទៅយកម៉ូតូរបស់អ្នកតាមរ៉ឺម៉ករបស់យើងដើម្បីយកវាទៅហាងដៃគូម៉ូតូដើម្បីជួសជុល។",
           },
           {
             icon: "IosLock",
-            title: "asdf",
+            title: "សុវត្ថិភាព",
             text:
-              "The roads of Cambodia can be dangerous. We make sure all repairs are done properly to ensure your safety",
+              "មានគ្រោះថ្នាក់ជាច្រើននៅលើដងផ្លូវដែលបណ្ដាលមកពីបញ្ហាម៉ូតូ សូមកុំអោយម៉ូតូអ្នកស្ថិតក្នុងចំណោមម៉ូតូទាំងនោះ។ យើងរក្សាម៉ូតូរបស់អ្នកឱ្យដំណើរការល្អ និងមានសុវត្ថិភាពនៅលើដងផ្លូវ! នៅដៃគូម៉ូតូ សុវត្ថិភាពរបស់អ្នក និងម៉ូតូរបស់អ្នក គឺជាអាទិភាពចម្បងរបស់យើង។",
+          },
+          {
+            icon: "IosEarth",
+            title:
+              "បម្រើសេវាកម្មដោយភាពរួសរាយរាក់ទាក់ជាភាសាអង់គ្លេស និងភាសាខ្មែរ",
+            text:
+              "គោលដៅរបស់យើងគឺជួយឱ្យអ្នករីករាយជាមួយបទពិសោធន៍នៃការជួសជុលម៉ូតូរបស់អ្នកតាមដែលយើងអាចធ្វើបាន។ នៅហាងរបស់យើង អាចនិយាយបានពីរភាសា ទាំងភាសាខ្មែរ និងភាសាអង់គ្លេស ហើយយើងរីករាយក្នុងការបម្រើអតិថិជនរបស់យើងទាំងជនជាតិខ្មែរ និងជនជាតិបរទេសដោយសុចរិតភាព។",
           },
         ],
       },

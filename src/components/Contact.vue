@@ -85,10 +85,19 @@ export default {
         ],
       },
       khmer: {
-        title: "asdfasdf",
-        name: "asdfasdf",
-        email: "asdfasdf",
-        message: "adsfasdf",
+        title: "WE'RE HAPPY TO HEAR FROM YOU",
+        name: "Name",
+        email: "E-mail",
+        message: "Message",
+        contactDetails: [
+          {
+            icon: "Phone",
+            text: "+855 61 960 015",
+          },
+          { icon: "Email", text: "test@test.com" },
+          { icon: "Hours", text: " Monday to Thursday, 8:00am to 5:00pm" },
+          { icon: "Location", text: "Phnom Penh Thmey, Khan Sen Sok" },
+        ],
       },
       contact: {
         name: "",
