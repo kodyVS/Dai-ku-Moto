@@ -68,7 +68,7 @@ export default {
           image: "customer-3",
           person: "Milton Chapman",
           text:
-            "I came in with a broken transmission expecting that the moto would be out of comission all week. Colin and his team had it up and running the next day. I appreciated the love and care that went into the replacement, Thank you Dai Ku Moto!",
+            "I came in with a broken transmission expecting that the moto would be out of comission all week. Colin and his team had it up and running the next day. I appreciated the love and care that went into the replacement. Thank you Dai Ku Moto!",
         },
       ],
     };
