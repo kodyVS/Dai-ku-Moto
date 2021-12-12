@@ -36,9 +36,11 @@
         <input type="submit" value="Send" id="btn-submit" />
       </form>
       <div class="contact-details">
-        <h3 class="contact-details__title">Contact</h3>
+        <h3 v-if="$language === 'english'" class="contact-details__title">
+          Contact
+        </h3>
         <div
-          v-for="(contactDetail, index) in english.contactDetails"
+          v-for="(contactDetail, index) in text.contactDetails"
           :key="index"
           class="contact-detail"
         >
@@ -47,7 +49,9 @@
           /></icon>
           <p>{{ contactDetail.text }}</p>
         </div>
-        <p><i>Contact us for an exact location</i></p>
+        <p>
+          <i>{{ text.subtitle }}</i>
+        </p>
       </div>
     </div>
   </div>
@@ -71,6 +75,7 @@ export default {
       link: "https://formsubmit.co/kodyvansloten1@gmail.com",
       english: {
         title: "WE'RE HAPPY TO HEAR FROM YOU",
+        subtitle: "Contact us for an exact location",
         name: "Name",
         email: "E-mail",
         message: "Message",
@@ -79,24 +84,28 @@ export default {
             icon: "Phone",
             text: "+855 61 960 015",
           },
-          { icon: "Email", text: "test@test.com" },
+          { icon: "Email", text: "colinwassenaar@gmail.com" },
           { icon: "Hours", text: " Monday to Thursday, 8:00am to 5:00pm" },
           { icon: "Location", text: "Phnom Penh Thmey, Khan Sen Sok" },
         ],
       },
       khmer: {
-        title: "WE'RE HAPPY TO HEAR FROM YOU",
-        name: "Name",
-        email: "E-mail",
+        title: "ទំនាក់ទំនង",
+        subtitle: "ទាក់ទងមកយើងសម្រាប់ទីតាំងពិតប្រាកដ",
+        name: "ទូរស័ព្ទខ្សែទី១",
+        email: "ទូរស័ព្ទខ្សែរទី២",
         message: "Message",
         contactDetails: [
           {
             icon: "Phone",
-            text: "+855 61 960 015",
+            text: "+៨៥៥ ៦១ ៩៦០ ០១៥",
           },
-          { icon: "Email", text: "test@test.com" },
-          { icon: "Hours", text: " Monday to Thursday, 8:00am to 5:00pm" },
-          { icon: "Location", text: "Phnom Penh Thmey, Khan Sen Sok" },
+          { icon: "Phone", text: "០៧០ ៣៦០ ៥៨៧" },
+          {
+            icon: "Hours",
+            text: "ថ្ងៃច័ន្ទ ដល់ ថ្ងៃព្រហស្បតិ៍ ម៉ោង ៨ ព្រឹកដល់ ៥ ល្ងាច",
+          },
+          { icon: "Location", text: "សង្កាត់ភ្នំពេញថ្មី ខណ្ឌសែនសុខ។" },
         ],
       },
       contact: {

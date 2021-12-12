@@ -48,24 +48,27 @@ export default {
           image: "customer-3",
           person: "Milton Chapman",
           text:
-            " Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. The owner is a really nice person",
+            "I came in with a broken transmission expecting that the moto would be out of comission all week. Colin and his team had it up and running the next day. I appreciated the love and care that went into the replacement, Thank you Dai Ku Moto!",
         },
       ],
       khmer: [
         {
           image: "customer-1",
           person: "Kody Van Sloten",
-          text: "",
+          text:
+            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. The owner is a really nice person",
         },
         {
           image: "customer-2",
           person: "Joana Silva",
-          text: "",
+          text:
+            "I dropped off my moto and I don't even recognize the moto they gave back. They did such a good job on the custom paint work and I am so happy with the way it turned out.",
         },
         {
           image: "customer-3",
           person: "Milton Chapman",
-          text: "",
+          text:
+            "I came in with a broken transmission expecting that the moto would be out of comission all week. Colin and his team had it up and running the next day. I appreciated the love and care that went into the replacement, Thank you Dai Ku Moto!",
         },
       ],
     };

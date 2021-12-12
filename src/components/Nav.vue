@@ -212,23 +212,23 @@ export default {
       khmer: {
         links: [
           {
-            text: "asdf",
+            text: "ផ្ទះ",
             id: "home",
           },
           {
-            text: "asdf",
+            text: "អំពី​ពួក​យើង",
             id: "about-us",
           },
           {
-            text: "asdf",
+            text: "រឿង",
             id: "testimonials",
           },
           {
-            text: "asdf",
+            text: "វិចិត្រសាល",
             id: "gallery",
           },
           {
-            text: "asdf",
+            text: "ទាក់ទង​មក​ពួក​យើង",
             id: "contact-us",
           },
         ],
