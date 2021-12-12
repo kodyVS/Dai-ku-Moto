@@ -17,8 +17,12 @@
         >
       </a>
     </div>
-    <div class="features__hours">
+    <div v-if="$language === 'english'" class="features__hours">
       Monday to Thursday | 8:00am 5:00pm
+    </div>
+
+    <div v-else class="features__hours">
+      ថ្ងៃច័ន្ទ ដល់ ថ្ងៃព្រហស្បតិ៍ ម៉ោង ៨ ព្រឹកដល់ ៥ ល្ងាច
     </div>
     <!-- Using 2 different divs when the language switches. I could probably reduce code by adding ternary operators in each field
     but I am not sure which is more optimal -->
