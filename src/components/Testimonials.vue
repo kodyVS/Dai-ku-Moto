@@ -52,7 +52,7 @@ export default {
           image: "customer-1",
           person: "Kody Van Sloten",
           text:
-            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. You can tell the owner really takes care of his staff. There is not a better moto shop in Cambodia.",
+            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. You can tell the owner really takes care of his staff. I've had a pleasant experience everytime I needed to work with the dai ku moto team.",
         },
         {
           image: "customer-2",
