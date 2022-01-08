@@ -9,31 +9,21 @@
     <div class="footer__social">
       <ul class="nav__social">
         <li class="nav__social__icon">
-          <a
-            @click="scrollTo($event)"
-            href="https://www.facebook.com/daikumoto"
-            target="_blank"
-          >
+          <a @click="scrollTo($event)" href="https://www.facebook.com/daikumoto" target="_blank">
             <svg class="icon icon__facebook">
-              <use
-                xlink:href="../assets/img/icons/logo-facebook.svg#facebook"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/logo-facebook.svg#facebook"></use></svg
           ></a>
         </li>
         <li class="nav__social__icon">
           <a href="#">
             <svg class="icon icon__whatsapp">
-              <use
-                xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"></use></svg
           ></a>
         </li>
         <li class="nav__social__icon">
           <a href="#">
             <svg class="icon icon__telegram">
-              <use
-                xlink:href="../assets/img/icons/telegram.svg#telegram"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/telegram.svg#telegram"></use></svg
           ></a>
         </li>
       </ul>
@@ -46,7 +36,7 @@
       Back to Top
     </button>
     <div class="footer__author">
-      <p class="year"><i>@2021 Designed by Kody Van Sloten </i></p>
+      <p class="year"><i>@2022 Designed by NF Web Solutions </i></p>
     </div>
   </div>
 </template>

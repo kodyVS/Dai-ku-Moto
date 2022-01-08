@@ -5,20 +5,16 @@
     </div>
 
     <div class="testimonial-container__testimonials">
-      <div
-        v-for="(testimonial, index) in text"
-        :key="index"
-        class="testimonial"
-      >
+      <div v-for="(testimonial, index) in text" :key="index" class="testimonial">
         <blockquote class="testimonial__text">
           {{ testimonial.text }}
         </blockquote>
         <cite class="testimonial__person">
-          <img
+          <!-- <img
             class="testimonial__img"
             :src="require(`@/assets/img/${testimonial.image}.jpg`)"
             :alt="'customer' + index"
-          />
+          /> -->
           {{ testimonial.person }}</cite
         >
       </div>
@@ -36,13 +32,13 @@ export default {
           image: "customer-1",
           person: "Kody Van Sloten",
           text:
-            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. The owner is a really nice person",
+            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. You can tell the owner really takes care of his staff. I've had a pleasant experience everytime I needed to work with the dai ku moto team.",
         },
         {
           image: "customer-2",
-          person: "Joana Silva",
+          person: "Wejeka",
           text:
-            "I dropped off my moto and I don't even recognize the moto they gave back. They did such a good job on the custom paint work and I am so happy with the way it turned out.",
+            "Since 2018 until now, Colin and his team at Dai Ku Moto have been helping fix my moto. Four words came to mind about their professional service: Reliable, Trustworthy, Quality, and Affordable. Through their work, my moto is running great. Anytime I have a problem on my moto they always come back with a great solution to solve the issues, so that my moto will not break down or have worse issues. For this, I am so grateful that I can trust in their service! They have always provided the best quality services and the prices are also reasonable.",
         },
         {
           image: "customer-3",
@@ -56,13 +52,13 @@ export default {
           image: "customer-1",
           person: "Kody Van Sloten",
           text:
-            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. The owner is a really nice person",
+            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. You can tell the owner really takes care of his staff. There is not a better moto shop in Cambodia.",
         },
         {
           image: "customer-2",
-          person: "Joana Silva",
+          person: "Wejeka",
           text:
-            "I dropped off my moto and I don't even recognize the moto they gave back. They did such a good job on the custom paint work and I am so happy with the way it turned out.",
+            "Since 2018 until now, Colin and his team at Dai Ku Moto have been helping fix my moto. Four words came to mind about their professional service: Reliable, Trustworthy, Quality, and Affordable. Through their work, my moto is running great. I am so grateful that I can trust in their service! They have always provided the best quality services and the prices are also reasonable.",
         },
         {
           image: "customer-3",
@@ -114,11 +110,7 @@ blockquote:after {
   font-size: 500%;
 }
 .testimonial-container {
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.7)
-    ),
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url(../assets/img/clean-work-1.jpg);
   background-attachment: fixed;
   background-size: cover;

@@ -10,39 +10,25 @@
       <div class="nav-top">
         <a @click.prevent="toggleMenu()" href="#" class="nav-toggle">
           <svg class="icon__menu">
-            <use
-              xlink:href="../assets/img/icons/menu-outline.svg#menu"
-            ></use></svg
+            <use xlink:href="../assets/img/icons/menu-outline.svg#menu"></use></svg
         ></a>
         <ul class="nav__social">
           <li class="nav__social__icon">
-            <a
-              @click="scrollTo($event)"
-              href="https://www.facebook.com/daikumoto"
-              target="_blank"
-            >
+            <a @click="scrollTo($event)" href="https://www.facebook.com/daikumoto" target="_blank">
               <svg class="icon icon__facebook">
-                <use
-                  xlink:href="../assets/img/icons/logo-facebook.svg#facebook"
-                ></use></svg
+                <use xlink:href="../assets/img/icons/logo-facebook.svg#facebook"></use></svg
             ></a>
           </li>
           <li class="nav__social__icon">
-            <a
-              href="https://wa.me/85561960015?text=I'm%20in%20need%20of%20moto%20repair"
-            >
+            <a href="https://wa.me/85561960015?text=I'm%20in%20need%20of%20moto%20repair">
               <svg class="icon icon__whatsapp">
-                <use
-                  xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"
-                ></use></svg
+                <use xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"></use></svg
             ></a>
           </li>
           <li class="nav__social__icon">
             <a href="https://telegram.me/tarmanau">
               <svg class="icon icon__telegram">
-                <use
-                  xlink:href="../assets/img/icons/telegram.svg#telegram"
-                ></use></svg
+                <use xlink:href="../assets/img/icons/telegram.svg#telegram"></use></svg
             ></a>
           </li>
         </ul>
@@ -69,9 +55,7 @@
             Open Monday-Thurday <br />
             8:00am to 5:00pm
           </p>
-          <a href="tel:+62896706255135" class="mobile-nav__phone-number">
-            {{ text.number }}</a
-          >
+          <a href="tel:+62896706255135" class="mobile-nav__phone-number"> {{ text.number }}</a>
           <div class="mobile-nav__social-icons">
             <ul class="nav__social">
               <li class="nav__social__icon">
@@ -81,25 +65,19 @@
                   target="_blank"
                 >
                   <svg class="icon icon__facebook">
-                    <use
-                      xlink:href="../assets/img/icons/logo-facebook.svg#facebook"
-                    ></use></svg
+                    <use xlink:href="../assets/img/icons/logo-facebook.svg#facebook"></use></svg
                 ></a>
               </li>
               <li class="nav__social__icon">
                 <a href="#">
                   <svg class="icon icon__whatsapp">
-                    <use
-                      xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"
-                    ></use></svg
+                    <use xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"></use></svg
                 ></a>
               </li>
               <li class="nav__social__icon">
                 <a href="#">
                   <svg class="icon icon__telegram">
-                    <use
-                      xlink:href="../assets/img/icons/telegram.svg#telegram"
-                    ></use></svg
+                    <use xlink:href="../assets/img/icons/telegram.svg#telegram"></use></svg
                 ></a>
               </li>
             </ul>
@@ -118,25 +96,16 @@
 
       <!-- Links rendered from links object. -->
       <ul class="nav__links">
-        <li
-          class="nav__list-item"
-          v-for="(link, index) in text.links"
-          :key="index"
-        >
-          <a
-            @click.prevent="scrollTo($event)"
-            class="nav__link"
-            :id="'link-' + link.id"
-            >{{ link.text }}</a
-          >
+        <li class="nav__list-item" v-for="(link, index) in text.links" :key="index">
+          <a @click.prevent="scrollTo($event)" class="nav__link" :id="'link-' + link.id">{{
+            link.text
+          }}</a>
         </li>
       </ul>
 
       <!-- Currently only displaying the phone number with a link to phone app -->
       <div class="nav__information">
-        <a href="tel:+85561960015" class="nav__phone-number">{{
-          text.number
-        }}</a>
+        <a href="tel:+85561960015" class="nav__phone-number">{{ text.number }}</a>
         <!-- <p class="nav__hours">8:00 to 5:00pm Monday-Thursday</p> -->
       </div>
 
@@ -144,31 +113,21 @@
       <!-- In the future I will stop using xlink:href and just build components for the svg's since its so easy -->
       <ul class="nav__social">
         <li class="nav__social__icon">
-          <a
-            @click="scrollTo($event)"
-            href="https://www.facebook.com/daikumoto"
-            target="_blank"
-          >
+          <a @click="scrollTo($event)" href="https://www.facebook.com/daikumoto" target="_blank">
             <svg class="icon icon__facebook">
-              <use
-                xlink:href="../assets/img/icons/logo-facebook.svg#facebook"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/logo-facebook.svg#facebook"></use></svg
           ></a>
         </li>
         <li class="nav__social__icon">
           <a href="#">
             <svg class="icon icon__whatsapp">
-              <use
-                xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/logo-whatsapp.svg#whatsapp"></use></svg
           ></a>
         </li>
         <li class="nav__social__icon">
           <a href="#">
             <svg class="icon icon__telegram">
-              <use
-                xlink:href="../assets/img/icons/telegram.svg#telegram"
-              ></use></svg
+              <use xlink:href="../assets/img/icons/telegram.svg#telegram"></use></svg
           ></a>
         </li>
       </ul>
@@ -212,15 +171,15 @@ export default {
       khmer: {
         links: [
           {
-            text: "ផ្ទះ",
+            text: "ទំព័រដើម",
             id: "home",
           },
           {
-            text: "អំពី​ពួក​យើង",
+            text: "អំពីយើងខ្ញុំ",
             id: "about-us",
           },
           {
-            text: "រឿង",
+            text: "សក្ខីកម្ម",
             id: "testimonials",
           },
           {
@@ -228,7 +187,7 @@ export default {
             id: "gallery",
           },
           {
-            text: "ទាក់ទង​មក​ពួក​យើង",
+            text: "ទំនាក់ទំនងពួកយើង",
             id: "contact-us",
           },
         ],
@@ -322,9 +281,7 @@ export default {
     display: block;
     cursor: pointer;
     &:hover {
-      filter: brightness(
-        0.5
-      ); //I really like the filter: brightness effect on the icons
+      filter: brightness(0.5); //I really like the filter: brightness effect on the icons
     }
   }
   &__phone-number {
