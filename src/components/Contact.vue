@@ -44,9 +44,7 @@
           :key="index"
           class="contact-detail"
         >
-          <icon
-            ><component :is="contactDetail.icon" :iconStyle="'height:3rem'"
-          /></icon>
+          <icon><component :is="contactDetail.icon" :iconStyle="'height:3rem'"/></icon>
           <p>{{ contactDetail.text }}</p>
         </div>
         <p>
@@ -72,7 +70,7 @@ export default {
   data() {
     return {
       text: {},
-      link: "https://formsubmit.co/kodyvansloten1@gmail.com",
+      link: "https://formsubmit.co/colinwassenaar@gmail.com",
       english: {
         title: "WE'RE HAPPY TO HEAR FROM YOU",
         subtitle: "Contact us for an exact location",
