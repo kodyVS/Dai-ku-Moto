@@ -44,7 +44,7 @@ export default {
           image: "customer-3",
           person: "Gary Bevan",
           text:
-            "My old Suzuki Viva got to the point where it would not start. I contacted Dai Ku Moto and they came and collected the moto. They did a complete service, even flushed out the fuel tank and replaced the rings and valve seals. They delivered it back to my workplace all for $60. The moto now runs like new. Definitely recommend this shop to ex-pats as value for money and a staff that know what they are doing.",
+            "My old Suzuki Viva got to the point where it would not start. I contacted Dai Ku Moto and they came and collected the moto. They did a complete service, even flushed out the fuel tank and replaced the rings and valve seals. The moto now runs like new. Definitely recommend this shop to ex-pats as value for money and a staff that know what they are doing.",
         },
       ],
       khmer: [
