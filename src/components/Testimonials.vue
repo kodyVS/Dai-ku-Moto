@@ -32,13 +32,13 @@ export default {
           image: "customer-1",
           person: "Kody Van Sloten",
           text:
-            "Best moto shop in Cambodia. The service was outstanding and the quality of work was amazing. You can tell the owner really takes care of his staff. I've had a pleasant experience everytime I needed to work with the dai ku moto team.",
+            "Best moto shop in Cambodia. Four words came to mind about their professional service: Reliable, Trustworthy, Quality, and Affordable. The service was outstanding and the quality of work was amazing and you can tell the owner really takes care of his staff. I've had a pleasant experience everytime I needed work done by the dai ku moto team.",
         },
         {
           image: "customer-2",
           person: "Wejeka",
           text:
-            "Since 2018 until now, Colin and his team at Dai Ku Moto have been helping fix my moto. Four words came to mind about their professional service: Reliable, Trustworthy, Quality, and Affordable. Through their work, my moto is running great. Anytime I have a problem on my moto they always come back with a great solution to solve the issues, so that my moto will not break down or have worse issues. For this, I am so grateful that I can trust in their service! They have always provided the best quality services and the prices are also reasonable.",
+            "Since 2018 until now, Colin and his team at Dai Ku Moto have been helping fix my moto. Through their work, my moto is running great. Anytime I have a problem on my moto they always come back with a great solution to solve the issues, so that my moto will not break down or have worse issues. For this, I am so grateful that I can trust in their service! They have always provided the best quality services and the prices are also reasonable.",
         },
         {
           image: "customer-3",
