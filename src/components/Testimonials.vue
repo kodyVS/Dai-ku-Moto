@@ -42,9 +42,9 @@ export default {
         },
         {
           image: "customer-3",
-          person: "Milton Chapman",
+          person: "Gary Bevan",
           text:
-            "I came in with a broken transmission expecting that the moto would be out of comission all week. Colin and his team had it up and running the next day. I appreciated the love and care that went into the replacement, Thank you Dai Ku Moto!",
+            "My old Suzuki Viva got to the point where it would not start. I contacted Dai Ku Moto and they came and collected the moto. They did a complete service, even flushed out the fuel tank and replaced the rings and valve seals. They delivered it back to my workplace all for $60. The moto now runs like new. Definitely recommend this shop to ex-pats as value for money and a staff that know what they are doing.",
         },
       ],
       khmer: [
